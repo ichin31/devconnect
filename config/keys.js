@@ -1,5 +1,5 @@
-module.exports = {
-  mongoURI:
-    'mongodb://ichin31:ichin31@ds245772.mlab.com:45772/devconnector-ian-dev',
-  secertOrKey: 'secert'
-};
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./keys_prod');
+} else {
+  module.exports = require('./keys_dev');
+}
