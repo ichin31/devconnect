@@ -10,7 +10,7 @@ class Experience extends Component {
 
   render() {
     const experience = this.props.experience.map(exp => (
-      <tr key={exp.id}>
+      <tr key={exp._id}>
         <td>{exp.company}</td>
         <td>{exp.title}</td>
         <td>
@@ -33,7 +33,7 @@ class Experience extends Component {
     ));
     return (
       <div>
-        <h4 className="mb-4">Experience Credentails</h4>
+        <h4 className="mb-4">Experience Credentials</h4>
         <table className="table">
           <thead>
             <tr>
